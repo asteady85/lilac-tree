@@ -1,17 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>My Website</title>
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Website</title>
+  <link href="./output.css" rel="stylesheet"/>
+  <link rel="icon" href="./favicon.ico" type="image/x-icon"/>
 </head>
 <body>
-<main>
-    <h1>Welcome to My Website</h1>
-</main>
-<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
+<div x-data="{ open: false }" class="relative h-screen overflow-x-hidden flex-col md:flex md:flex-row">
+
+
+  <!-- Left sidebar -->
+  <div
+      class="fixed top-0 left-0 h-full w-5/10 bg-[#F6F1EC] text-black text-center z-20 transform transition-transform duration-300 ease-in-out
+           md:relative md:translate-x-0 md:w-4/10 lg:w-3/10 xl:w-2/10"
+      :class="{ '-translate-x-full': !open, 'translate-x-0': open }"
+  >
+    <div class="p-2 sm:p-4 md:p-6 lg:p-8 xl:p-10">
+      <img class="w-full rounded-full object-cover object-center" src="logo.jpg" />
+      <p>Love, innocence & remembrance</p>
+    </div>
+    <div class="p-6 text-left">
+      <nav class="space-y-4">
+        <a href="#" class="block text-gray-700 hover:text-black">Home</a>
+        <a href="#" class="block text-gray-700 hover:text-black">About</a>
+        <a href="#" class="block text-gray-700 hover:text-black">My Services</a>
+        <a href="#" class="block text-gray-700 hover:text-black">Gallery</a>
+        <a href="#" class="block text-gray-700 hover:text-black">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Main content -->
+  <div
+      class="h-full transition-transform duration-300 ease-in-out relative z-10 w-full bg-white overflow-y-auto
+           md:w-6/10 lg:w-7/10 xl:w-8/10"
+      :style="open ? 'transform: translateX(50%);' : 'transform: translateX(0);'"
+  >
+    <!-- Top Content -->
+    <div class="h-screen bg-[url('home-bg.jpg')] bg-cover bg-center">
+      <!-- Toggle button (only visible on small screens) -->
+      <button
+          class="md:hidden m-4 px-4 py-2 bg-blue-500 text-white rounded"
+          @click="open = !open"
+      >
+        Toggle Menu
+      </button>
+
+      <div class="p-4">
+        <h1 class="text-2xl font-bold">Main Content</h1>
+        <p>This is your page content.This is your page content.This is your page content.This is your page content.This is your page content.This is your page content.This is your page content.This is your page content.This is your page content.This is your page content.This is your page content.This is your page content.This is your page content.This is your page content.</p>
+      </div>
+    </div>
+
+    <!-- About Me Content -->
+    <div class="h-screen">
+      <div class="p-4">
+        <h1 class="text-2xl font-bold">Bottom Content</h1>
+        <p>This is your page content.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 </body>
 </html>

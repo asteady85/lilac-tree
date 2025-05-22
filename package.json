@@ -1,0 +1,26 @@
+{
+  "name": "lilac-tree",
+  "version": "1.0.0",
+  "description": "Lilac Tree Celebrancy",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asteady85/lilac-tree.git"
+  },
+  "keywords": [
+    "celebrancy"
+  ],
+  "author": "asteady85",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asteady85/lilac-tree/issues"
+  },
+  "homepage": "https://github.com/asteady85/lilac-tree#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.7",
+    "tailwindcss": "^4.1.7"
+  }
+}
