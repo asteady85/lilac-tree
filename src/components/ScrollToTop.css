@@ -1,0 +1,22 @@
+/* ScrollToTop button styles */
+.scroll-to-top {
+  position: fixed;
+  right: 2rem;
+  bottom: 2.5rem;
+  z-index: 999;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  opacity: 0.85;
+}
+.scroll-to-top:hover {
+  opacity: 1;
+}
+.scroll-to-top svg {
+  display: block;
+}
+.scroll-to-top-icon circle {
+  fill: var(--primary-color);
+}

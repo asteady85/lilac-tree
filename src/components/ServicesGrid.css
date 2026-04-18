@@ -1,0 +1,70 @@
+.services-grid-bg {
+  padding: 3rem 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.service-item {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  transition: box-shadow 0.2s;
+}
+
+.service-item:hover {
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+
+.icon-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1rem auto;
+  border-radius: 50%;
+  background: #e6e6e6;
+  color: #7c4dff;
+  font-size: 2rem;
+}
+
+.icon-circle.weddings {
+  background: #ffe3ec;
+  color: #d72660;
+}
+.icon-circle.namings {
+  background: #e3f7ff;
+  color: #0099c6;
+}
+.icon-circle.funerals {
+  background: #f3f3f3;
+  color: #555;
+}
+
+.service-item h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.service-item p {
+  font-size: 1rem;
+  color: #444;
+}
+
+@media (max-width: 900px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
+

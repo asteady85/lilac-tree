@@ -1,26 +1,27 @@
 {
-  "name": "lilac-tree",
+  "name": "lilac-tree-react",
   "version": "1.0.0",
-  "description": "Lilac Tree Celebrancy",
-  "main": "index.js",
+  "description": "A simple React app bundled with Parcel",
   "scripts": {
-    "test": "test"
+    "start": "npm run clean && parcel public/index.html --open",
+    "build": "npm run clean && parcel build public/index.html --dist-dir dist",
+    "clean": "rm -rf .parcel-cache dist"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/asteady85/lilac-tree.git"
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-grid-gallery": "^1.0.1",
+      "react-icons": "^5.5.0",
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1",
+    "yet-another-react-lightbox": "^3.24.0"
   },
-  "keywords": [
-    "celebrancy"
-  ],
-  "author": "asteady85",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/asteady85/lilac-tree/issues"
-  },
-  "homepage": "https://github.com/asteady85/lilac-tree#readme",
   "devDependencies": {
-    "@tailwindcss/cli": "^4.1.7",
-    "tailwindcss": "^4.1.7"
-  }
+    "@parcel/packager-raw-url": "^2.15.4",
+    "@parcel/transformer-webmanifest": "^2.15.4",
+    "parcel": "^2.15.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
