@@ -1,5 +1,5 @@
 import React from "react";
-import ContactForm from "./ContactForm";
+// import ContactForm from "./ContactForm";
 import "./ContactSection.css";
 
 const loisImg = new URL("../images/lois.png", import.meta.url).href;
@@ -15,7 +15,7 @@ export default function ContactSection() {
           <p><b>Email:</b> <a href="mailto:lois@lilactreeceremonies.co.uk">lois@lilactreeceremonies.co.uk</a></p>
           <p><b>Phone:</b> <a href="tel:07545661028">07545661028</a></p>
         </div>
-        {/*<ContactForm />*/}
+        { /* <ContactForm /> */ }
       </div>
       <div className="contact-image">
         <img src={loisImg} alt="Lois - Lilac Tree Celebrancy" />

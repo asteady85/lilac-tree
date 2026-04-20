@@ -87,6 +87,9 @@ b, strong {
 .padded.top { padding-top: 5rem; }
 .padded.bottom { padding-bottom: 5rem; }
 
+.padded-margin.top { margin-top: 5rem; }
+.padded-margin.bottom { margin-bottom: 5rem; }
+
 header {
   text-align: center;
   padding: 1rem 0;

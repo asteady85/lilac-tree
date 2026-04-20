@@ -1,10 +1,10 @@
 import React from "react";
 import "./Testimonial.css";
 
-export default function Testimonial({ children, author }) {
+export default function Testimonial({ children, author, className }) {
   const quoteImg = new URL("../images/quot.png", import.meta.url).href
   return (
-    <section className="testimonial">
+    <section className={`testimonial${className ? ` ${className}` : ""}`}>
       <div className="testimonial-box">
         <span className="quote"><img src={quoteImg} alt="" /></span>
         <h3 className="text-center pwe-heading">What people say</h3>

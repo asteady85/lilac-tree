@@ -19,7 +19,8 @@ export default function App() {
   const wedding2Img = new URL("images/gallery/wedding-3.jpg", import.meta.url).href
   const namingImg = new URL("images/gallery/naming-1.jpg", import.meta.url).href
   const funeralImg = new URL("images/gallery/funeral-1.jpg", import.meta.url).href
-  const locationImg = new URL("images/high-peak.png", import.meta.url).href
+  // const locationImg = new URL("images/high-peak.png", import.meta.url).href
+  const locationImg = new URL("images/buxton.jpg", import.meta.url).href
   return (
     <>
       <Header />
@@ -52,12 +53,12 @@ export default function App() {
 
       <ServicesGrid />
 
-      <Testimonial author="Sarah">
+      <Testimonial author="Sarah" className="padded-margin top">
         I can't recommend Lois highly enough for the crematorium service she provided. Lois was compassionate, warm, and professional throughout the entire process. A day I had been dreading turned into a truly beautiful and meaningful send-off for my dad, thanks to the care and humanity Lois showed, along with her thoughtful and thorough preparation.<br /><br />
         We are so grateful for the comfort and guidance she provided during such a difficult time.
       </Testimonial>
       
-      <section className="section-padding">
+      <section>
         <ImageContent id="weddings" image={weddingImg}>
           <H2 meta="WEDDINGS">Celebrating Love</H2>
           <p>&nbsp;</p>
